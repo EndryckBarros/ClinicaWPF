@@ -26,7 +26,7 @@
             <TextBox Name="txtLogin"/>
             <TextBlock Name="lblSenha" Text="Senha"/>
             <PasswordBox Name="txtSenha"/>
-            <Button Name="btnLogar" Content="Entrar"/>
+            <Button Name="btnLogar" Content="Entrar" Click="btnLogar_Click"/>
         </StackPanel>
     </Grid>
 </Window>

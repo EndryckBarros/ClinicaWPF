@@ -23,5 +23,10 @@ namespace ViewWPF.Views
         {
             InitializeComponent();
         }
+
+        private void btnLogar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
