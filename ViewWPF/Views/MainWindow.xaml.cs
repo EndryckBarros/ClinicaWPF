@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace View
+namespace ViewWPF.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +23,12 @@ namespace View
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
         }
     }
 }
