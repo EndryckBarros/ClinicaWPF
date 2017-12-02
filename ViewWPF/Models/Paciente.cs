@@ -12,12 +12,12 @@ namespace ViewWPF.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Medico
+    public partial class Paciente
     {
         public int Id { get; set; }
         public string Nome { get; set; }
         public string CPF { get; set; }
-        public string Especialidade { get; set; }
+        public string Telefone { get; set; }
         public int UsuarioId { get; set; }
     
         public virtual Usuario Usuario { get; set; }
