@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Views\CadastrarMedico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastrarPaciente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -68,6 +80,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\Medico.cs" />
+    <Compile Include="Views\CadastrarMedico.xaml.cs">
+      <DependentUpon>CadastrarMedico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastrarPaciente.xaml.cs">
+      <DependentUpon>CadastrarPaciente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroUsuario.xaml.cs">
+      <DependentUpon>CadastroUsuario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
