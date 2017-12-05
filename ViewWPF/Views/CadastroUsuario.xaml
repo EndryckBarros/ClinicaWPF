@@ -30,16 +30,16 @@
         <!--Labels-->
 
         <!--TextBoxs-->
-        <TextBox x:Name="txtNome" Grid.Row="0" Grid.Column="1" 
+        <TextBox x:Name="txtLogin" Grid.Row="0" Grid.Column="1" 
                  HorizontalAlignment="Stretch" VerticalAlignment="Center"
                  Margin="0,0,15,0" FontSize="12" Padding="5" TabIndex="0" Height="25">
         </TextBox>
 
-        <TextBox x:Name="txtCpf" Grid.Row="1" Grid.Column="1" 
+        <TextBox x:Name="txtSenha" Grid.Row="1" Grid.Column="1" 
                  HorizontalAlignment="Stretch" VerticalAlignment="Center"
                  Margin="0,0,15,0" FontSize="12" Padding="5" TabIndex="1" Height="27"/>
 
-        <TextBox x:Name="txtEspecialidade" Grid.Row="2" Grid.Column="1" 
+        <TextBox x:Name="txtConfirmSenha" Grid.Row="2" Grid.Column="1" 
                  HorizontalAlignment="Stretch" VerticalAlignment="Center"
                  Margin="0,0,15,0" FontSize="12" Padding="5" TabIndex="0" Height="28"/>
         <!--TextBoxs-->
@@ -48,18 +48,18 @@
         <Button x:Name="btnGravar" Content="Gravar" Grid.Row="3" 
                 Grid.Column="1" HorizontalAlignment="Left" 
                 VerticalAlignment="Center" FontSize="12" Padding="5" 
-                TabIndex="2" Margin="0,3,0,14" Height="30" Width="55"/>
+                TabIndex="2" Margin="0,3,0,14" Height="30" Width="55" Click="btnGravar_Click"/>
 
         <Button x:Name="btnBuscar" Content="Buscar" Grid.Row="3" 
                 Grid.Column="1" HorizontalAlignment="Left" IsEnabled="False"
                 VerticalAlignment="Center" FontSize="12" Padding="5" 
-                Margin="94,3,0,14" TabIndex="3" Height="30" Width="55"/>
+                Margin="94,3,0,14" TabIndex="3" Height="30" Width="55" Click="btnBuscar_Click"/>
 
         <Button x:Name="btnAlterar" Content="Alterar" Grid.Row="3" 
                 Grid.Column="1" HorizontalAlignment="Left" 
                 VerticalAlignment="Center" FontSize="12" Padding="5" 
                 Margin="181,3,0,14" TabIndex="3"
-                IsEnabled="False" Height="30" Width="55"/>
+                IsEnabled="False" Height="30" Width="55" Click="btnAlterar_Click"/>
         <!--Buttons-->
 
     </Grid>

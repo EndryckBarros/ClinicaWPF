@@ -21,12 +21,12 @@
             Grid.Column="1"
             Grid.Row="1"
             VerticalAlignment="Center">
-            <Image Name="imgBatman" Source="/Images/batmanMask.png" />
-            <TextBlock Name="lblLogin" Text="Login" />
-            <TextBox Name="txtLogin"/>
-            <TextBlock Name="lblSenha" Text="Senha"/>
-            <PasswordBox Name="txtSenha"/>
-            <Button Name="btnLogar" Content="Entrar" Click="btnLogar_Click"/>
+            <Image x:Name="imgBatman" Source="/ViewWPF;component/Images/icons8-batman-50.png" Height="55" Margin="38,0,37,0" />
+            <TextBlock x:Name="lblLogin" Text="Login" />
+            <TextBox x:Name="txtLogin"/>
+            <TextBlock x:Name="lblSenha" Text="Senha"/>
+            <PasswordBox x:Name="txtSenha"/>
+            <Button x:Name="btnLogar" Content="Entrar" Click="btnLogar_Click" HorizontalAlignment="Right" Width="146"/>
         </StackPanel>
     </Grid>
 </Window>

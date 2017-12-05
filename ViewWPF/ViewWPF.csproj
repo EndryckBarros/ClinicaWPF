@@ -102,6 +102,9 @@
     <Compile Include="Views\PacientesCadastrados.xaml.cs">
       <DependentUpon>PacientesCadastrados.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\PaginaInicial.xaml.cs">
+      <DependentUpon>PaginaInicial.xaml</DependentUpon>
+    </Compile>
     <Page Include="Views\CadastrarMedico.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -147,6 +150,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PacientesCadastrados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PaginaInicial.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

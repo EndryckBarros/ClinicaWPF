@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using ViewWPF.DAL;
+using ViewWPF.Models;
 
 namespace ViewWPF.Views
 {
@@ -24,9 +16,34 @@ namespace ViewWPF.Views
             InitializeComponent();
         }
 
+        Usuario u = new Usuario();
+
         private void btnLogar_Click(object sender, RoutedEventArgs e)
         {
+            u = new Usuario();
+            u = UsuarioDAO.BuscarUsuarioPorLogin2(txtLogin.Text);
+            Program.Batatinha = u.Id;
 
+            if (u != null && TestarSenha(u.Senha))
+            {
+                PaginaInicial pi = new PaginaInicial();
+                pi.Show();
+            }
+            else
+            {
+                MessageBox.Show("Login / Senha Incorretos!", "SGCS WF");
+            }
+        }
+
+        private bool TestarSenha(String senha)
+        {
+            if (senha.Equals(txtSenha.Password.ToString()))
+            {
+                return true;
+            }
+            return false;
         }
     }
-}
+
+    }
+
