@@ -28,5 +28,6 @@
             <PasswordBox x:Name="txtSenha"/>
             <Button x:Name="btnLogar" Content="Entrar" Click="btnLogar_Click" HorizontalAlignment="Right" Width="146"/>
         </StackPanel>
+        <Button x:Name="btnAdd" Content="Add User" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="73" Click="btnAdd_Click"/>
     </Grid>
 </Window>

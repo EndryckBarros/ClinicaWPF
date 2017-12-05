@@ -31,7 +31,8 @@ namespace ViewWPF.Views
             }
             else
             {
-                MessageBox.Show("Login / Senha Incorretos!", "SGCS WF");
+                MessageBox.Show("Login / Senha Incorretos!", "SGCS WPF",
+                                MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -42,6 +43,12 @@ namespace ViewWPF.Views
                 return true;
             }
             return false;
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrodeUsuario cu = new CadastrodeUsuario();
+            cu.Show();
         }
     }
 
