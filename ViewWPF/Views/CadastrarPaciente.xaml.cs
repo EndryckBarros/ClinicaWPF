@@ -60,6 +60,8 @@ namespace ViewWPF.Views
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
+            btnGravar.IsEnabled = false;
+            btnAlterar.IsEnabled = true;
 
             if (!string.IsNullOrEmpty(txtCpf.Text))
             {
@@ -72,6 +74,7 @@ namespace ViewWPF.Views
                 {
                     txtNome.Text = p.Nome;
                     txtCpf.Text = p.CPF;
+                    txtTelefone.Text = p.Telefone;
                 }
                 else
                 {

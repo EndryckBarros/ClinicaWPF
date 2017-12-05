@@ -59,16 +59,18 @@ namespace ViewWPF.DAL
 
         public static List<Paciente> ListagemFiltradaDePacientes(int id)
         {
-            List<Paciente> ListaFiltrada = new List<Paciente>();
+            //List<Paciente> ListaFiltrada = new List<Paciente>();
 
-            foreach (Paciente pacienteTestado in ctx.Pacientes.ToList())
-            {
-                if (pacienteTestado.UsuarioId.Equals(id))
-                {
-                    ListaFiltrada.Add(pacienteTestado);
-                }
-            }
-            return ListaFiltrada;
+            //foreach (Paciente pacienteTestado in ctx.Pacientes.ToList())
+            //{
+            //    if (pacienteTestado.UsuarioId.Equals(id))
+            //    {
+            //        ListaFiltrada.Add(pacienteTestado);
+            //    }
+            //}
+            //return ListaFiltrada;
+
+            return ctx.Pacientes.Where(p => p.UsuarioId == id).ToList();
         }
 
         public static int Contagem()

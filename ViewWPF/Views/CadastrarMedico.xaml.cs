@@ -41,25 +41,28 @@ namespace ViewWPF.Views
                 };
                 if (MedicoDAO.SalvarMedico(m))
                 {
-                    MessageBox.Show("Medico cadastrado com sucesso!", "SGCS WF",
+                    MessageBox.Show("Medico cadastrado com sucesso!", "SGCS WPF",
                         MessageBoxButton.OK, MessageBoxImage.Information);
                     LimparCampos();
                 }
                 else
                 {
-                    MessageBox.Show("Não foi possível adicionar o Medico!", "SGCS WF"
-                       /* MessageBoxButton.OK, MessageBoxImage.Error*/);
+                    MessageBox.Show("Não foi possível adicionar o Medico!", "SGCS WPF",
+                       MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Favor preencher os campos", "SGCS WF"
-                   /* MessageBoxButton.OK, MessageBoxImage.Information*/);
+                MessageBox.Show("Favor preencher os campos", "SGCS WPF",
+                    MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
+            btnGravar.IsEnabled = false;
+            btnAlterar.IsEnabled = true;
+
             if (!string.IsNullOrEmpty(txtCpf.Text))
             {
                 m = new Medico
@@ -75,7 +78,7 @@ namespace ViewWPF.Views
                 }
                 else
                 {
-                    MessageBox.Show("Não foi possível encontrar o Medico!", "SGCS WF",
+                    MessageBox.Show("Não foi possível encontrar o Medico!", "SGCS WPF",
                         MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
@@ -97,7 +100,7 @@ namespace ViewWPF.Views
                 }
                 else
                 {
-                    MessageBox.Show("Favor preencher os campos", "SGCS WF",
+                    MessageBox.Show("Favor preencher os campos", "SGCS WPF",
                     MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }

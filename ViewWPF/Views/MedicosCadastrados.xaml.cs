@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ViewWPF.DAL;
+using ViewWPF.Models;
 
 namespace ViewWPF.Views
 {
@@ -19,9 +21,14 @@ namespace ViewWPF.Views
     /// </summary>
     public partial class MedicosCadastrados : Window
     {
+        public List<Medico> MeusMedicos { get; set; }
+
         public MedicosCadastrados()
         {
             InitializeComponent();
+            MeusMedicos = MedicoDAO.ListagemFiltradaDeMedicos(Program.Batatinha);
+            DataContext = this;
+            dataGrid.Items.Refresh();
         }
     }
 }

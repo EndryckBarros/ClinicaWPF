@@ -28,6 +28,7 @@ namespace ViewWPF.Views
             {
                 PaginaInicial pi = new PaginaInicial();
                 pi.Show();
+                this.Close();
             }
             else
             {

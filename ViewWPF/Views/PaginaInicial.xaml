@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewWPF.Views"
         mc:Ignorable="d"
-        Title="PaginaInicial" Height="300" Width="300">
+        Title="PaginaInicial" Height="300" Width="300" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF252E3B">
 
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="292" Background="#FF0066CC">

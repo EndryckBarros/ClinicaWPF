@@ -28,6 +28,7 @@ namespace ViewWPF.Views
         {
             Login login = new Login();
             login.Show();
+            this.Close();
         }
 
         private void cadastrarPaciente_Click(object sender, RoutedEventArgs e)
